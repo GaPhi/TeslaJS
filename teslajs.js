@@ -736,11 +736,11 @@ exports.vehicleData = function vehicleData(options, args, callback){
       - closures_state
       - drive_state
       - gui_settings
-      - location_state
+      - location_data
       - vehicle_state
       - vehicle_config
     */
-    var endpoints = args?.endpoints ?? [ 'climate_state', 'charge_state', 'drive_state', 'gui_settings', 'vehicle_state', 'vehicle_config' ]
+    var endpoints = args?.endpoints ?? [ 'climate_state', 'charge_state', 'drive_state', 'gui_settings', 'vehicle_state', 'vehicle_config', 'location_data' ]
     if (Array.isArray(endpoints)) { endpoints = endpoints.join(';'); }
     /*
       null or true
